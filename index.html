@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Studio | Салон маникюра</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Nail Studio — учебный лендинг студии маникюра с примерами услуг и демонстрационной формой записи.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">К основному содержанию</a>
+
+    <!-- Шапка -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <i aria-hidden="true" class="fas fa-hand-sparkles logo-icon"></i>
+                <div class="logo-text">Nail<span>Studio</span></div>
+            </div>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>
+                Меню
+            </button>
+            <nav id="site-nav" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#features">Преимущества</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="#contacts" class="btn header-cta">Демо-запись</a>
+        </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <!-- Герой -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Идеальный маникюр <br><span>для ваших рук</span></h1>
+                    <p>Профессиональный уход, безопасные материалы, стерильный инструмент и атмосфера красоты. Посмотрите услуги и попробуйте демонстрационную форму записи.</p>
+                    <a href="#contacts" class="btn">Попробовать демо-запись</a>
+                </div>
+                <div class="hero-image">
+                    <img class="hero-photo"
+                         src="images/hero-manicure-960.webp"
+                         srcset="images/hero-manicure-480.webp 480w, images/hero-manicure-960.webp 960w"
+                         sizes="(max-width: 439px) calc(100vw - 40px), 400px"
+                         width="960" height="720" fetchpriority="high"
+                         alt="Розовый маникюр с мерцающим покрытием крупным планом">
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section tabindex="-1" id="services">
+            <div class="container">
+                <h2 class="section-title">Наши <span>услуги</span></h2>
+                <p class="section-subtitle">Качественный маникюр и педикюр по доступным ценам</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i aria-hidden="true" class="fas fa-hand-sparkles"></i></div>
+                        <h3>Классический маникюр</h3>
+                        <p>Аккуратная обработка кутикулы, придание формы ногтям, покрытие базой и маслом.</p>
+                        <div class="service-price">от 1 200 ₽</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i aria-hidden="true" class="fas fa-paint-brush"></i></div>
+                        <h3>Маникюр с покрытием</h3>
+                        <p>Гель-лак любого цвета, стойкость до 3-4 недель, укрепление ногтевой пластины.</p>
+                        <div class="service-price">от 1 800 ₽</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i aria-hidden="true" class="fas fa-magic"></i></div>
+                        <h3>Дизайн ногтей</h3>
+                        <p>Стразы, роспись, втирка, градиент — воплотим любые ваши идеи.</p>
+                        <div class="service-price">от 500 ₽</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i aria-hidden="true" class="fas fa-shoe-prints"></i></div>
+                        <h3>Педикюр</h3>
+                        <p>Аппаратный педикюр с покрытием гель-лаком, уход за стопами.</p>
+                        <div class="service-price">от 2 000 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section tabindex="-1" id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Почему <span>мы</span>?</h2>
+                <p class="section-subtitle">Мы создаем комфорт и красоту для каждого клиента</p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i aria-hidden="true" class="fas fa-certificate"></i>
+                        <h3>Стерильность</h3>
+                        <p>Инструменты проходят трёхэтапную обработку и стерилизуются в сухожаре.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i aria-hidden="true" class="fas fa-clock"></i>
+                        <h3>Без ожидания</h3>
+                        <p>Работаем строго по записи, чтобы вы не тратили время в очереди.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i aria-hidden="true" class="fas fa-leaf"></i>
+                        <h3>Безопасные материалы</h3>
+                        <p>Используем гипоаллергенные покрытия премиум-класса.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i aria-hidden="true" class="fas fa-heart"></i>
+                        <h3>Индивидуальный подход</h3>
+                        <p>Учитываем ваши пожелания и особенности ногтей.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Галерея -->
+        <section tabindex="-1" id="gallery">
+            <div class="container">
+                <h2 class="section-title">Идеи <span>маникюра</span></h2>
+                <p class="section-subtitle">От нежных оттенков до ярких акцентов</p>
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img class="gallery-photo" src="images/soft-pink.webp"
+                             alt="Руки со светло-розовым покрытием при мягком освещении" width="720" height="720" loading="lazy" decoding="async">
+                        <figcaption>Нежно-розовый</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img class="gallery-photo" src="images/red-art.webp"
+                             alt="Красный маникюр с белыми деталями на синем фоне" width="720" height="720" loading="lazy" decoding="async">
+                        <figcaption>Красный с рисунком</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img class="gallery-photo" src="images/glitter.webp"
+                             alt="Маникюр с блестящими деталями на розовой ткани" width="720" height="720" loading="lazy" decoding="async">
+                        <figcaption>Блестящие акценты</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img class="gallery-photo" src="images/french.webp"
+                             alt="Крупный план руки с французским маникюром и кольцом" width="720" height="720" loading="lazy" decoding="async">
+                        <figcaption>Френч</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img class="gallery-photo" src="images/classic-red.webp"
+                             alt="Руки с глянцевым красным покрытием" width="720" height="720" loading="lazy" decoding="async">
+                        <figcaption>Классический красный</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img class="gallery-photo" src="images/colorful.webp"
+                             alt="Руки с разноцветным покрытием ногтей" width="720" height="720" loading="lazy" decoding="async">
+                        <figcaption>Разноцветный дизайн</figcaption>
+                    </figure>
+                </div>
+                <p class="gallery-credit">Фотографии для вдохновения — <a href="https://www.pexels.com/">Pexels</a>.</p>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section tabindex="-1" id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы <span>клиентов</span></h2>
+                <p class="section-subtitle">Что говорят о нас наши гости</p>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <span class="sr-only">Оценка: 5 из 5</span>
+                            <i aria-hidden="true" class="fas fa-star"></i><i aria-hidden="true" class="fas fa-star"></i><i aria-hidden="true" class="fas fa-star"></i><i aria-hidden="true" class="fas fa-star"></i><i aria-hidden="true" class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">«Прекрасный салон! Мастер сделала невероятный дизайн, всё аккуратно и стерильно. Хожу теперь только сюда».</p>
+                        <div class="review-author">— Анна К.</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <span class="sr-only">Оценка: 5 из 5</span>
+                            <i aria-hidden="true" class="fas fa-star"></i><i aria-hidden="true" class="fas fa-star"></i><i aria-hidden="true" class="fas fa-star"></i><i aria-hidden="true" class="fas fa-star"></i><i aria-hidden="true" class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">«Была на педикюре — очень довольна! Уютная атмосфера, мастер внимательный. Ноготки радуют уже третью неделю».</p>
+                        <div class="review-author">— Екатерина М.</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <span class="sr-only">Оценка: 4,5 из 5</span>
+                            <i aria-hidden="true" class="fas fa-star"></i><i aria-hidden="true" class="fas fa-star"></i><i aria-hidden="true" class="fas fa-star"></i><i aria-hidden="true" class="fas fa-star"></i><i aria-hidden="true" class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="review-text">«Отличное место! Записалась онлайн, пришла — и сразу к мастеру, без ожидания. Покрытие держится отлично».</p>
+                        <div class="review-author">— Ольга В.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section tabindex="-1" id="contacts">
+            <div class="container">
+                <h2 class="section-title">Демо <span>записи</span></h2>
+                <p class="section-subtitle">Попробуйте заполнить форму тестовыми данными</p>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Пример контактов</h3>
+                        <div class="contact-item">
+                            <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+                            <span>г. Москва, ул. Красивая, д. 12, студия 5</span>
+                        </div>
+                        <div class="contact-item">
+                            <i aria-hidden="true" class="fas fa-phone-alt"></i>
+                            <span>+7 (999) 123-45-67</span>
+                        </div>
+                        <div class="contact-item">
+                            <i aria-hidden="true" class="fas fa-envelope"></i>
+                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="28404d444447684d50494558444d064b4745">[email&#160;protected]</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i aria-hidden="true" class="fas fa-clock"></i>
+                            <span>Ежедневно с 10:00 до 21:00</span>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Демонстрационная форма</h3>
+                        <p class="form-note" id="demo-note">Демо-форма: данные не отправляются. Не указывайте реальные имя и номер телефона.</p>
+                        <noscript><p class="form-note">Для проверки полей включите JavaScript.</p></noscript>
+                        <form id="demo-form" aria-describedby="demo-note">
+                            <fieldset id="demo-fields" disabled>
+                                <legend class="sr-only">Данные для демонстрации</legend>
+                                <div class="form-group">
+                                    <label for="demo-name">Имя</label>
+                                    <input id="demo-name" type="text" autocomplete="off" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="demo-phone">Телефон</label>
+                                    <input id="demo-phone" type="tel" autocomplete="off" aria-describedby="phone-hint" required>
+                                    <small id="phone-hint">Введите 10–15 цифр. Например: +7 (000) 000-00-00.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="demo-message">Услуга <span>(необязательно)</span></label>
+                                    <textarea id="demo-message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-full">Проверить форму</button>
+                            </fieldset>
+                            <p class="form-status" id="demo-status" role="status"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i aria-hidden="true" class="fas fa-hand-sparkles logo-icon"></i>
+                        <div class="logo-text">Nail<span>Studio</span></div>
+                    </div>
+                    <p>Учебный лендинг студии маникюра. Услуги, контакты и отзывы приведены для примера.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 NailStudio. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
